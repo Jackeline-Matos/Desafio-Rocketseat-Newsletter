@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* sintase para suavização de fontes */
+    -webkit-font-smoothing: anitialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+:root {
+/* 
+  - medidas flexiveis - para facilitar a utilizacao de medidas relativas,
+  setamos a fonte em 62.5% * 16 pixel  = 10, assim poderemos sempre dividir por 
+  10 para facilitar a utilizacao da medida relativa rem.
+
+*/
+    font-size: 62.5%;
+
+    --bg-color: #09090A;
+    --bg-input-color: #202024;
+    --font-color-white: #FFFFFF;
+    --font-color-gray: #C4C4CC;
+    --bg-gradient-color: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
+}
+
+body{
+    background-image: url("./assets/BGbackgrounnIMG.png");
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: var(--bg-color);
+
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    margin: 16rem 0;
+    max-width: 50rem;
+}
+
+main span {
+    text-transform: uppercase;
+    
+
+}
