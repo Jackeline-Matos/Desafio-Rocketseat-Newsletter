@@ -9,10 +9,10 @@
 }
 
 :root {
-/* 
-  - medidas flexiveis - para facilitar a utilizacao de medidas relativas,
-  setamos a fonte em 62.5% * 16 pixel  = 10, assim poderemos sempre dividir por 
-  10 para facilitar a utilizacao da medida relativa rem.
+    /* 
+    - medidas flexiveis - para facilitar a utilizacao de medidas relativas,
+    setamos a fonte em 62.5% * 16 pixel  = 10, assim poderemos sempre dividir por 
+    10 para facilitar a utilizacao da medida relativa rem.
 
 */
     font-size: 62.5%;
@@ -24,7 +24,7 @@
     --bg-gradient-color: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
 }
 
-body{
+body {
     background-image: url("./assets/BGbackgrounnIMG.png");
     background-size: 100vh;
     background-repeat: no-repeat;
@@ -45,8 +45,98 @@ main {
     max-width: 50rem;
 }
 
-main span {
+main>span {
     text-transform: uppercase;
-    
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.4rem;
+    letter-spacing: 0.16rem;
+
+    /* 
+        -Para que as letras fiquem com a cor em gradiente podemos utilizar a combinacao:
+         background 
+         -webkit-background-clip: text;
+         color: transparent;
+
+    */
+    background: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+main h1 {
+    margin-top: 1.6rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: var(--font-color-white);
 
 }
+
+h2 {
+
+    font-size: 2rem;
+    color: var(--font-color-gray);
+    font-weight: 400;
+    margin: 3.2rem 0;
+    line-height: 2.8rem;
+
+}
+
+main form {
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+main form input {
+    width: 29rem;
+    height: 5.8rem;
+    background-color: var(--bg-input-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    color: var(--font-color-white);
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: var(--font-color-gray);
+}
+
+main form button {
+    border: none;
+    width: 32%;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    background: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+footer {
+    display: flex;
+    color:var(--font-color-white);
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 21rem;
+   
+}
+
+footer div{
+    margin-right:10rem;
+}
+
+footer h3{
+    font-size: 1.5rem;
+    font-weight:100;
+    margin: 1rem 0 ;
+
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+
